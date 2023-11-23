@@ -1,0 +1,65 @@
+thead th .slds-grid {
+    justify-content: center;
+}
+
+.slds-input {
+    text-align: center;
+}
+
+.c-flex {
+    display: flex;
+}
+
+.c-text-center {
+    text-align: center;
+    white-space: break-spaces;
+}
+
+.c-table-header-padding {
+    padding: 1.25rem .5rem;
+    justify-content: center;
+    border-right: 1px solid #dddbda;
+}
+
+.c-square {
+    width: 1.5rem;
+    height: 1.5rem;
+    float: left;
+    margin-right: 10px;
+    background-color: #ffffff;
+    border: 1px solid #dddbda;
+    border-radius: 0.25rem;
+}
+
+.slds-table td, .slds-table th {
+    background-color: #ffffff!important;
+}
+
+.slds-table a {
+        color: #005fb2!important; 
+}
+
+.slds-input:active, .slds-input:focus {
+    border: 1px solid #dddbda!important;
+    box-shadow: none!important;
+}
+
+.slds-input.c-pending, .slds-input.c-pending, .c-pending{
+    border-color: #e50000!important;
+    box-shadow: 0 0 3px #e50000!important;
+}
+
+.slds-input.c-received, .slds-input.c-received, .c-received {
+    border-color: #198c19!important;
+    box-shadow: 0 0 3px #198c19!important;
+}
+
+.slds-input.c-uploaded, .slds-input.c-uploaded, .c-uploaded {
+    box-shadow: rgb(0, 112, 210) 0px 0px 3px!important;
+    border-color: rgb(21, 137, 238)!important;
+}
+
+.slds-table--bordered tbody td, .slds-table--bordered tbody th, .slds-table_bordered tbody td, .slds-table_bordered tbody th {
+    border-right: 1px solid #dddbda;
+    white-space: break-spaces;
+}

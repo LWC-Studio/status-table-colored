@@ -1,0 +1,329 @@
+<template>
+	<div class="slds-grid slds-wrap">
+		<div class="slds-col slds-size_1-of-1 slds-p-around_large" style="background: #ffffff;">
+			<div class="slds-grid slds-gutters">
+				<div class="slds-col c-flex" style="justify-content: right;">
+					<div class="c-square c-pending"></div>
+					<span style="margin-top: 2px;">Pending</span>
+				</div>
+				<div class="slds-col c-flex" style="justify-content: center;">
+					<div class="c-square c-received"></div>
+					<span style="margin-top: 2px;">Received</span>
+				</div>
+				<div class="slds-col c-flex" style="justify-content: left;">
+					<div class="c-square c-uploaded"></div>
+					<span style="margin-top: 2px;">Uploaded</span>
+				</div>
+			</div>
+		</div>
+		<div class="slds-col slds-size_1-of-1">
+			<div class="slds-table_edit_container slds-is-relative slds-scrollable_x">
+				<table aria-multiselectable="true"
+					class="slds-table slds-no-cell-focus slds-table_bordered slds-table_edit slds-table_fixed-layout slds-table_resizable-cols"
+					role="grid" style="width:66.75rem;margin-left: auto;margin-right: auto;border: 1px solid lightgray;"
+					aria-label="Example default inline edit table with cell focused">
+					<thead>
+						<tr class="slds-line-height_reset">
+							<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+								style="width:8.75rem">
+								<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+									tabindex="-1">
+									<div class="slds-grid slds-grid_vertical-align-center">
+										<span class="c-text-center" title="Name">REPORT TYPE</span>
+									</div>
+								</div>
+							</th>
+							<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+								style="width:8.75rem">
+								<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+									tabindex="-1">
+									<div class="slds-grid slds-grid_vertical-align-center">
+										<span class="c-text-center" title="Name">RELATED</span>
+									</div>
+								</div>
+							</th>
+							<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+								style="width:8.75rem">
+								<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+									tabindex="-1">
+									<div class="slds-grid slds-grid_vertical-align-center">
+										<span class="c-text-center" title="Name">NAME</span>
+									</div>
+								</div>
+							</th>
+							<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+								style="width:8.75rem">
+								<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+									tabindex="-1">
+									<div class="slds-grid slds-grid_vertical-align-center">
+										<span class="c-text-center" title="Name">DOC. NAME</span>
+									</div>
+								</div>
+							</th>
+							<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+								style="width:8.75rem">
+								<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+									tabindex="-1">
+									<div class="slds-grid slds-grid_vertical-align-center">
+										<span class="c-text-center" title="Name">STATUS</span>
+									</div>
+								</div>
+							</th>
+							<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+								style="width:8.75rem">
+								<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+									tabindex="-1">
+									<div class="slds-grid slds-grid_vertical-align-center">
+										<span class="c-text-center" title="Name">REMARKS</span>
+									</div>
+								</div>
+							</th>
+							<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+								style="width:8.75rem">
+								<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+									tabindex="-1">
+									<div class="slds-grid slds-grid_vertical-align-center">
+										<span class="c-text-center" title="Name">SAMPLED</span>
+									</div>
+								</div>
+							</th>
+							<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+								style="width:8.75rem">
+								<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+									tabindex="-1">
+									<div class="slds-grid slds-grid_vertical-align-center">
+										<span class="c-text-center" title="Name">SCREENED</span>
+									</div>
+								</div>
+							</th>
+							<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+								style="width:8.75rem">
+								<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+									tabindex="-1">
+									<div class="slds-grid slds-grid_vertical-align-center">
+										<span class="c-text-center" title="Name">TARGET DATE</span>
+									</div>
+								</div>
+							</th>
+							<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+								style="width:8.75rem">
+								<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+									tabindex="-1">
+									<div class="slds-grid slds-grid_vertical-align-center">
+										<span class="c-text-center" title="Name">RECEIVED DATE</span>
+									</div>
+								</div>
+							</th>
+							<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+								style="width:8.75rem">
+								<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+									tabindex="-1">
+									<div class="slds-grid slds-grid_vertical-align-center">
+										<span class="c-text-center" title="Name">UPLOAD</span>
+									</div>
+								</div>
+							</th>
+							<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+								style="width:8.75rem">
+								<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+									tabindex="-1">
+									<div class="slds-grid slds-grid_vertical-align-center">
+										<span class="c-text-center" title="Name">VIEW</span>
+									</div>
+								</div>
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr aria-selected="false" class="slds-hint-parent">
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <a class="slds-form-element__label">Credit verification report</a>
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+								<span class="slds-form-element__label">Application</span>
+								</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <a class="slds-form-element__label">PLATINUM PVT LTD</a>
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="" data-table="1"/>
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input c-pending" value="Pending" data-table="1"/>
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="" data-table="1"/>
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <input type="checkbox" name="options" style="width: 1.1rem;height: 1.1rem;margin-left: auto;margin-right: auto;" />
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <input type="checkbox" name="options" style="width: 1.1rem;height: 1.1rem;margin-left: auto;margin-right: auto;" />
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <lightning-input type="date" name="input1" label="Enter Date" variant="label-hidden"></lightning-input>
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <lightning-input type="date" name="input1" label="Enter Date" variant="label-hidden"></lightning-input>
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <lightning-button-icon style="margin-left: auto;margin-right: auto;" icon-name="utility:upload"  alternative-text="Settings" title="Settings"></lightning-button-icon>
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <lightning-button-icon style="margin-left: auto;margin-right: auto;" icon-name="utility:file"  alternative-text="Settings" title="Settings"></lightning-button-icon>
+						</span>
+							</td>
+						</tr>
+						<tr aria-selected="false" class="slds-hint-parent">
+							<td class="" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <a class="slds-form-element__label">Credit verification report</a>
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+								<span class="slds-form-element__label">Application</span>
+								</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <a class="slds-form-element__label">PLATINUM PVT LTD</a>
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="" data-table="1"/>
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input c-received" value="Received" data-table="1"/>
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="" data-table="1"/>
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <input type="checkbox" name="options" style="width: 1.1rem;height: 1.1rem;margin-left: auto;margin-right: auto;" />
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <input type="checkbox" name="options" style="width: 1.1rem;height: 1.1rem;margin-left: auto;margin-right: auto;" />
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <lightning-input type="date" name="input1" label="Enter Date" variant="label-hidden"></lightning-input>
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <lightning-input type="date" name="input1" label="Enter Date" variant="label-hidden"></lightning-input>
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <lightning-button-icon style="margin-left: auto;margin-right: auto;" icon-name="utility:upload"  alternative-text="Settings" title="Settings"></lightning-button-icon>
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <lightning-button-icon style="margin-left: auto;margin-right: auto;" icon-name="utility:file"  alternative-text="Settings" title="Settings"></lightning-button-icon>
+						</span>
+							</td>
+						</tr>
+						<tr aria-selected="false" class="slds-hint-parent">
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <a class="slds-form-element__label">Credit verification report</a>
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+								<span class="slds-form-element__label">Application</span>
+								</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <a class="slds-form-element__label">PLATINUM PVT LTD</a>
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="" data-table="1"/>
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input c-uploaded" value="Uploaded" data-table="1"/>
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="" data-table="1"/>
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <input type="checkbox" name="options" style="width: 1.1rem;height: 1.1rem;margin-left: auto;margin-right: auto;" />
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <input type="checkbox" name="options" style="width: 1.1rem;height: 1.1rem;margin-left: auto;margin-right: auto;" />
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <lightning-input type="date" name="input1" label="Enter Date" variant="label-hidden"></lightning-input>
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <lightning-input type="date" name="input1" label="Enter Date" variant="label-hidden"></lightning-input>
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <lightning-button-icon style="margin-left: auto;margin-right: auto;" icon-name="utility:upload"  alternative-text="Settings" title="Settings"></lightning-button-icon>
+						</span>
+							</td>
+							<td class="slds-cell-edit" role="gridcell">
+								<span class="slds-grid slds-grid_align-spread">
+                <lightning-button-icon style="margin-left: auto;margin-right: auto;" icon-name="utility:file"  alternative-text="Settings" title="Settings"></lightning-button-icon>
+						</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</template>
